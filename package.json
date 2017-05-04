@@ -1,0 +1,21 @@
+{
+  "name": "mmcs-scraper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "xamgore",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-register": "^6.24.1",
+    "dotenv": "^4.0.0",
+    "html-to-text": "^3.2.0",
+    "lowdb": "^0.16.2",
+    "node-telegram-bot-api": "^0.27.1",
+    "osmosis": "^1.1.4"
+  }
+}
