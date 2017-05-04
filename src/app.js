@@ -17,7 +17,7 @@ let scraper = osmos
 
 let options = { wordwrap: false, linkHrefBaseUrl: 'https://mmcs.sfedu.ru' }
 
-let prepare = posts =>
+let prepareText = posts =>
   posts.reverse()
     .map(p => ({
       ...p,
@@ -59,7 +59,7 @@ let sendToChat = async posts => {
 
 
 run(scraper)
-  .then(prepare)
+  .then(prepareText)
   .then(skipExisting)
   .then(ps => console.log(`New posts: ${ps.length}`) || ps)
   .then(sendToChat)
