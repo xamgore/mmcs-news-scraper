@@ -27,3 +27,9 @@ run(scraper)
 ### How to build
 
 There is the `.env.example` file in the project root. Rename it to `.env`, change variables inside, then download all dependencies by `npm i`, and run the app with `npm start` command. Yarn is also supported.
+
+To add a task to cron run `crontab -e`, then add the line:
+
+```
+*/30 * * * *   cd /home/xamgore/mmcs-news-scraper/ && /usr/local/bin/node ./index.js
+```
