@@ -44,14 +44,17 @@ let savePosts = posts => {
 
 const channel = process.env.MMCS_NEWS_TELEGRAM_CHANNEL
 const devchat = process.env.MMCS_NEWS_DEV_CHAT
+const entities = s =>
+  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&rt;')
+
 
 let sendToChat = async posts => {
   for (let p of posts) {
     let lnk = p.link ? `<a href="https://mmcs.sfedu.ru${p.link}">Читать дальше</a>\n` : ''
-    let msg = `<b>${p.title}</b>\n\n${p.text}\n${lnk}\n<em>${p.author}</em>`
+    let msg = `<b>${p.title}</b>\n\n${entities(p.text)}\n${lnk}\n<em>${p.author}</em>`
 
     try { await tm.sendMessage(channel, msg, { parse_mode: 'HTML' }) }
-    catch (e) { tm.sendMessage(devchat, e.toString()) }
+    catch (e) { tm.sendMessage(devchat, e.toString()); throw e }
   }
 
   return posts
