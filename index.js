@@ -1,4 +1,4 @@
-rqeuire('babel-polyfill')
+require('babel-polyfill')
 require('babel-register')({
   presets: ['env'],
   plugins: ['transform-object-rest-spread']
