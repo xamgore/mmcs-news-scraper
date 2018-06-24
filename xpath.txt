@@ -1,0 +1,30 @@
+title: //h1[has-class("article_title")]
+body: //div[has-class("newsitem_text")]
+
+
+# remove "Автор", then parse name
+author: //span[has-class("createby")]/text()[2]
+@replace("Автор: ", ""): $author
+
+
+# remove "Обновлено", then parse date
+date: //span[has-class("modifydate")]
+@replace("Обновлено: ", ""): $date
+
+@datetime: $date
+published_date: $@
+
+
+# mark colored spans as bold
+@wrap(<b>): //span[starts-with(@style, 'color')]
+
+
+# remove bad images from the page
+# and take one from the article if exists
+@remove: //img[has-class("mythumb")]
+@remove: //img[contains(@src, "logo_sfedu_white.png")]
+
+
+image_url: //img/@src
+image_url: "https://i.imgur.com/tQxAcdo.png"
+@debug: $image_url

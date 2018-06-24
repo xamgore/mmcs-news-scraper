@@ -1,0 +1,147 @@
+{
+    "?": [
+        "xml version=\"1.0\" encoding=\"utf-8\"",
+        "xml-stylesheet href=«http://mmcs.sfedu.ru/plugins/system/truetypography/css/truetypography.css» type=«text/css»"
+    ],
+    "!": "-- generator=\"Joomla! - Open Source Content Management\" --",
+    "rss": {
+        "@version": "2.0",
+        "@xmlns:atom": "http://www.w3.org/2005/Atom",
+        "channel": {
+            "title": "Институт математики, механики и компьютерных наук ЮФУ",
+            "description": "",
+            "link": "http://mmcs.sfedu.ru",
+            "lastBuildDate": "Sun, 24 Jun 2018 12:48:36 +0000",
+            "generator": "Joomla! — Open Source Content Management",
+            "atom:link": {
+                "@rel": "self",
+                "@type": "application/rss+xml",
+                "@href": "http://mmcs.sfedu.ru/component/content/category?format=feed&type=rss"
+            },
+            "language": "ru-ru",
+            "managingEditor": "m.karyakin@gmail.com (Мехмат ЮФУ)",
+            "item": [
+                {
+                    "title": "Молодёжная конференция в рамках НСКФ-2018",
+                    "link": "http://mmcs.sfedu.ru/148-news/1618-%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D1%91%D0%B6%D0%BD%D0%B0%D1%8F-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D1%8F-%D0%B2-%D1%80%D0%B0%D0%BC%D0%BA%D0%B0%D1%85-%D0%BD%D1%81%D0%BA%D1%84–2018",
+                    "guid": {
+                        "@isPermaLink": "true",
+                        "#": "http://mmcs.sfedu.ru/148-news/1618-%D0%BC%D0%BE%D0%BB%D0%BE%D0%B4%D1%91%D0%B6%D0%BD%D0%B0%D1%8F-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D1%8F-%D0%B2-%D1%80%D0%B0%D0%BC%D0%BA%D0%B0%D1%85-%D0%BD%D1%81%D0%BA%D1%84–2018"
+                    },
+                    "description": "<p>Студенты и аспиранты приглашаются на Молодёжную конференцию студентов и аспирантов, которая будет проходить 26 ноября 2018 г. в рамках Национального суперкомпьютерного форума в г. Переяславль-Залесский. Организаторы предоставляют финансовую поддержку для докладчиков и волонтёров.</p>\n<p><a href=\"http://4students.nscf.ru/\">Подробности</a></p>",
+                    "author": "bravit111@gmail.com (Брагилевский В.Н. )",
+                    "category": "ROOT",
+                    "pubDate": "Fri, 22 Jun 2018 01:23:39 +0000"
+                },
+                {
+                    "title": "Набор в Летнюю детскую математическую школу",
+                    "link": "http://mmcs.sfedu.ru/147-news/sunmathevents/1617-%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D0%BB%D0%B4%D0%BC%D1%88–2018",
+                    "guid": {
+                        "@isPermaLink": "true",
+                        "#": "http://mmcs.sfedu.ru/147-news/sunmathevents/1617-%D0%BD%D0%B0%D0%B1%D0%BE%D1%80-%D0%BB%D0%B4%D0%BC%D1%88–2018"
+                    },
+                    "description": "<p>Воскресная математическая школа при мехмате ЮФУ объявляет набор школьников, окончивших 4–10 классы, в Летнюю детскую математическую школу.</p>",
+                    "author": "oprozorov@mail.ru (Прозоров О.А.)",
+                    "category": "ROOT",
+                    "pubDate": "Tue, 19 Jun 2018 06:34:26 +0000"
+                },
+                {
+                    "title": "Результаты Открытого тестирования ВМШ при мехмате ЮФУ и РМЦ ЮФУ",
+                    "link": "http://mmcs.sfedu.ru/147-news/sunmathevents/1616-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D1%8B-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%B3%D0%BE-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B2%D0%BC%D1%88-%D0%BF%D1%80%D0%B8-%D0%BC%D0%B5%D1%85%D0%BC%D0%B0%D1%82%D0%B5-%D1%8E%D1%84%D1%83-%D0%B8-%D1%80%D0%BC%D1%86-%D1%8E%D1%84%D1%83",
+                    "guid": {
+                        "@isPermaLink": "true",
+                        "#": "http://mmcs.sfedu.ru/147-news/sunmathevents/1616-%D1%80%D0%B5%D0%B7%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%82%D1%8B-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%B3%D0%BE-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%D0%B2%D0%BC%D1%88-%D0%BF%D1%80%D0%B8-%D0%BC%D0%B5%D1%85%D0%BC%D0%B0%D1%82%D0%B5-%D1%8E%D1%84%D1%83-%D0%B8-%D1%80%D0%BC%D1%86-%D1%8E%D1%84%D1%83"
+                    },
+                    "description": "<p>Ниже можно ознакомиться с <a href=\"http://mmcs.sfedu.ru/jdownload/finish/11-abiturientam/1904-rezultaty-otkrytogo-testirovaniya-vmsh-i-rmts\">результатами</a> Открытого тестирования, проведенного 09.06.18 <a href=\"http://mmcs.sfedu.ru/98-entrants/sunmath/839-aboutsunmath\">Воскресной математической школой при мехмате ЮФУ</a> и <a href=\"http://sfedu.ru/www/stat_pages22.show?p=ELS/inf/D&x=ELS/10624\">Региональным научно-образовательным математическим центром ЮФУ</a>.</p>",
+                    "author": "oprozorov@mail.ru (Прозоров О.А.)",
+                    "category": "ROOT",
+                    "pubDate": "Thu, 14 Jun 2018 12:44:56 +0000"
+                },
+                {
+                    "title": "Научный семинар",
+                    "link": "http://mmcs.sfedu.ru/148-news/1615-%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D1%8B%D0%B9-%D1%81%D0%B5%D0%BC%D0%B8%D0%BD%D0%B0%D1%80",
+                    "guid": {
+                        "@isPermaLink": "true",
+                        "#": "http://mmcs.sfedu.ru/148-news/1615-%D0%BD%D0%B0%D1%83%D1%87%D0%BD%D1%8B%D0%B9-%D1%81%D0%B5%D0%BC%D0%B8%D0%BD%D0%B0%D1%80"
+                    },
+                    "description": "<p>14 июня на научном семинаре с докладом «Интегральный оператор с ядром, имеющим скачки на сторонах квадрата, вписанного в единичный квадрат» выступит О.А.Королева (Саратов). Начало в 16.00, в ауд. 311. Приглашаются все желающие.</p>",
+                    "author": "dezhkin@mail.ru (Налбандян Ю.С.)",
+                    "category": "ROOT",
+                    "pubDate": "Fri, 08 Jun 2018 03:27:34 +0000"
+                },
+                {
+                    "title": "Конкурс портфолио для поступающих в магистратуру ЮФУ",
+                    "link": "http://mmcs.sfedu.ru/148-news/1614-%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81-%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B0%D1%8E%D1%89%D0%B8%D1%85-%D0%B2-%D0%BC%D0%B0%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D1%83%D1%80%D1%83-%D1%8E%D1%84%D1%83",
+                    "guid": {
+                        "@isPermaLink": "true",
+                        "#": "http://mmcs.sfedu.ru/148-news/1614-%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81-%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B0%D1%8E%D1%89%D0%B8%D1%85-%D0%B2-%D0%BC%D0%B0%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D1%83%D1%80%D1%83-%D1%8E%D1%84%D1%83"
+                    },
+                    "description": "<p>Выпускникам бакалавриата предоставляется возможность до 5 июня подать документы on-line для участия в конкурсе портфолио на направления подготовки 01.04.02 Прикладная математика и информатика,  01.04.03 Механика и математическое моделирование, 02.04.02 Фундаментальная информатика и информационные технологии, 44.04.01 Педагогическое образование. Подробности <a href=\"http://sfedu.ru/www/stat_pages22.show?p=ABT/N13183/P\">на сайте ЮФУ</a>. Согласно <a href=\"http://sfedu.ru/00_main_2010/abitur/abit_2018/pravila_priema2018.pdf\">Правилам приема</a> победители конкурса портфолио зачисляются на соответствующее направление подготовки без экзамена, а участники конкурса, набравшие более 50 баллов, могут засчитать этот результат в качестве вступительного испытания. Успейте подать заявку вовремя!</p>",
+                    "author": "revina@math.rsu.ru (Ревина С.В.)",
+                    "category": "ROOT",
+                    "pubDate": "Sat, 02 Jun 2018 10:42:06 +0000"
+                },
+                {
+                    "title": "ВМШ при мехмате ЮФУ и РНОМЦ ЮФУ приглашают школьников на Открытое тестирование",
+                    "link": "http://mmcs.sfedu.ru/147-news/sunmathevents/1613-%D0%B2%D0%BC%D1%88-%D0%BF%D1%80%D0%B8-%D0%BC%D0%B5%D1%85%D0%BC%D0%B0%D1%82%D0%B5-%D1%8E%D1%84%D1%83-%D0%B8-%D1%80%D0%BD%D0%BE%D0%BC%D1%86-%D1%8E%D1%84%D1%83-%D0%BF%D1%80%D0%B8%D0%B3%D0%BB%D0%B0%D1%88%D0%B0%D1%8E%D1%82-%D1%88%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-%D0%BD%D0%B0-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%B5-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5",
+                    "guid": {
+                        "@isPermaLink": "true",
+                        "#": "http://mmcs.sfedu.ru/147-news/sunmathevents/1613-%D0%B2%D0%BC%D1%88-%D0%BF%D1%80%D0%B8-%D0%BC%D0%B5%D1%85%D0%BC%D0%B0%D1%82%D0%B5-%D1%8E%D1%84%D1%83-%D0%B8-%D1%80%D0%BD%D0%BE%D0%BC%D1%86-%D1%8E%D1%84%D1%83-%D0%BF%D1%80%D0%B8%D0%B3%D0%BB%D0%B0%D1%88%D0%B0%D1%8E%D1%82-%D1%88%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-%D0%BD%D0%B0-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BE%D0%B5-%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5"
+                    },
+                    "description": "<p>Воскресная математическая школа при мехмате ЮФУ и Региональный научно-образовательный математический центр ЮФУ приглашают всех желающих школьников, окончивших 3–8 и 10 классы, принять участие в Открытом тестировании ВМШ при мехмате ЮФУ. </p>",
+                    "author": "oprozorov@mail.ru (Прозоров О.А.)",
+                    "category": "ROOT",
+                    "pubDate": "Thu, 31 May 2018 01:08:56 +0000"
+                },
+                {
+                    "title": "Итоги олимпиад ЮФУ для школьников  по математике и информатике",
+                    "link": "http://mmcs.sfedu.ru/148-news/1612-%D0%B8%D1%82%D0%BE%D0%B3%D0%B8-%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B0%D0%B4%D1%8B-%D1%8E%D1%84%D1%83-%D0%B4%D0%BB%D1%8F-%D1%88%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-%D0%BF%D0%BE-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B5-2018",
+                    "guid": {
+                        "@isPermaLink": "true",
+                        "#": "http://mmcs.sfedu.ru/148-news/1612-%D0%B8%D1%82%D0%BE%D0%B3%D0%B8-%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B0%D0%B4%D1%8B-%D1%8E%D1%84%D1%83-%D0%B4%D0%BB%D1%8F-%D1%88%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-%D0%BF%D0%BE-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B5-2018"
+                    },
+                    "description": "<p>Подведены итоги Олимпиад ЮФУ для школьников.</p>\n<p>По информатике в этом году призовые места заняли десятиклассники:<br />Алехин Артем — 1 место <br />Бураков Даниил  — 2 место <br />Горшков Сергей  — 3 место</p>\n<p>По математике:</p>\n<p>Ларин Александр (7 класс), Ганжина Алина (8 класс), Доц Екатерина (9 класс) — 1 место; Бабинцев Валерий (9 класс) — второе место.</p>",
+                    "author": "ogpustovalova@sfedu.ru (Пустовалова О.Г.)",
+                    "category": "ROOT",
+                    "pubDate": "Wed, 30 May 2018 16:23:31 +0000"
+                },
+                {
+                    "title": "Результаты олимпиады по программированию «Недели науки – 2018»",
+                    "link": "http://mmcs.sfedu.ru/148-news/1611-%D0%B8%D1%82%D0%BE%D0%B3%D0%B8-%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B0%D0%B4%D1%8B-%D0%BF%D0%BE-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E-%C2%AB%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8-%D0%BD%D0%B0%D1%83%D0%BA%D0%B8-%E2%80%93–2018%C2%BB",
+                    "guid": {
+                        "@isPermaLink": "true",
+                        "#": "http://mmcs.sfedu.ru/148-news/1611-%D0%B8%D1%82%D0%BE%D0%B3%D0%B8-%D0%BE%D0%BB%D0%B8%D0%BC%D0%BF%D0%B8%D0%B0%D0%B4%D1%8B-%D0%BF%D0%BE-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8E-%C2%AB%D0%BD%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8-%D0%BD%D0%B0%D1%83%D0%BA%D0%B8-%E2%80%93–2018%C2%BB"
+                    },
+                    "description": "<div>Подведены итоги олимпиады по программированию института математики, механики и компьютерных наук им. И. И. Воровича в рамках «Недели науки – 2018»</div>",
+                    "author": "smkuzmenko@sfedu.ru (Кузьменко С.М.)",
+                    "category": "ROOT",
+                    "pubDate": "Fri, 18 May 2018 12:00:37 +0000"
+                },
+                {
+                    "title": "Открыт конкурс на получение стипендий Президента и Правительства России",
+                    "link": "http://mmcs.sfedu.ru/148-news/1610-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82-%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81-%D0%BD%D0%B0-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D0%B8%D0%BF%D0%B5%D0%BD%D0%B4%D0%B8%D0%B9-%D0%BF%D1%80%D0%B5%D0%B7%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B0-%D0%B8-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+                    "guid": {
+                        "@isPermaLink": "true",
+                        "#": "http://mmcs.sfedu.ru/148-news/1610-%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82-%D0%BA%D0%BE%D0%BD%D0%BA%D1%83%D1%80%D1%81-%D0%BD%D0%B0-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D1%82%D0%B8%D0%BF%D0%B5%D0%BD%D0%B4%D0%B8%D0%B9-%D0%BF%D1%80%D0%B5%D0%B7%D0%B8%D0%B4%D0%B5%D0%BD%D1%82%D0%B0-%D0%B8-%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%B0-%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B8"
+                    },
+                    "description": "<p>Студенты и аспиранты ЮФУ очной формы обучения могут принять участие в конкурсе на получение стипендий Президента и Правительства Российской Федерации на 2018/2019 учебный год.</p>",
+                    "author": "nadolin@math.rsu.ru (Надолин К.А.)",
+                    "category": "ROOT",
+                    "pubDate": "Fri, 18 May 2018 10:53:40 +0000"
+                },
+                {
+                    "title": "Победители конференции на английском языке 2018 года в ИММиКН им. И.И. Воровича",
+                    "link": "http://mmcs.sfedu.ru/148-news/1609-%D0%BF%D0%BE%D0%B1%D0%B5%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%BC-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5-2018-%D0%B3%D0%BE%D0%B4%D0%B0-%D0%B2-%D0%B8%D0%BC%D0%BC%D0%B8%D0%BA%D0%BD-%D0%B8%D0%BC-%D0%B8-%D0%B8-%D0%B2%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%87%D0%B0",
+                    "guid": {
+                        "@isPermaLink": "true",
+                        "#": "http://mmcs.sfedu.ru/148-news/1609-%D0%BF%D0%BE%D0%B1%D0%B5%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B8-%D0%BA%D0%BE%D0%BD%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%86%D0%B8%D0%B8-%D0%BD%D0%B0-%D0%B0%D0%BD%D0%B3%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%BC-%D1%8F%D0%B7%D1%8B%D0%BA%D0%B5-2018-%D0%B3%D0%BE%D0%B4%D0%B0-%D0%B2-%D0%B8%D0%BC%D0%BC%D0%B8%D0%BA%D0%BD-%D0%B8%D0%BC-%D0%B8-%D0%B8-%D0%B2%D0%BE%D1%80%D0%BE%D0%B2%D0%B8%D1%87%D0%B0"
+                    },
+                    "description": "<p>Заседания секций проходили 10, 11 и 15 мая, в трёх секциях конференции выступили 23 докладчика, и призовые места были присуждены следующим студентам:</p>\n<ul>\n<li>1-ое место – Сорокина Евгения, Касюлевич Ян, Акопджанова Николь</li>\n<li>2-ое место – Степаненко Сергей, Полтавский Артем, Арутюнов Олег</li>\n<li>3-е место – Снегур Анастасия, Чебанный Александр, Каспаров Александр, Нечушкин Дмитрий, Трикоз Борис. </li>\n</ul>",
+                    "author": "nyerusalimskaya@sfedu.ru (Грушко Е.И.)",
+                    "category": "ROOT",
+                    "pubDate": "Wed, 16 May 2018 18:43:03 +0000"
+                }
+            ]
+        }
+    }
+}

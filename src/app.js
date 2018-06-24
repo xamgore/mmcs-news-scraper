@@ -1,59 +1,45 @@
-import osmos from 'osmosis'
-import toText from 'html-to-text'
-import run from './runner'
+import { fromXML } from 'from-xml'
+import fetch from 'node-fetch'
 import db from './database'
 import tm from './telegram'
 
-let scraper = osmos
-  .get('https://mmcs.sfedu.ru/')
-  .find('.teaserarticles .news_item_f')
-  .set({
-    title: '.article_title',
-    date: ['.createdate > .numbers'],
-    author: '.createby', 'text': '.newsitem_text:html',
-    link: 'a.btn.readon @href'
-  })
 
 
-let options = { wordwrap: false, linkHrefBaseUrl: 'https://mmcs.sfedu.ru' }
+let grabRSS = url =>
+  fetch(url).then(res => res.text()).then(body => fromXML(body))
 
-let prepareText = posts =>
-  posts.reverse()
-    .map(p => ({
-      ...p,
-      date:   p.date.join('.'),
-      title:  p.title.trim(),
-      author: p.author.trim().replace(/^Автор: /, ''),
-      text:   toText.fromString(p.text, options).trim()
-    }))
+
+// check the `rss-example.json` file for the structure
+let extractPosts = xml => xml.rss.channel.item.reverse()
 
 
 let skipExisting = posts =>
   posts.filter(p =>
     0 === db.get('posts')
-            .find({id:`${p.date}|${p.title}`})
+            .find({id:`${p.link}`})
             .size().value())
 
 
 let savePosts = posts => {
   let storage = db.get('posts')
-  for (let p of posts) storage = storage.push({ id:`${p.date}|${p.title}` })
+  for (let p of posts) storage = storage.push({ id:`${p.link}` })
   storage.write()
 }
 
 
 const channel = process.env.MMCS_NEWS_TELEGRAM_CHANNEL
 const devchat = process.env.MMCS_NEWS_DEV_CHAT
-const entities = s =>
-  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&rt;')
 
+let sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 let sendToChat = async posts => {
   for (let p of posts) {
-    let lnk = p.link ? `<a href="https://mmcs.sfedu.ru${p.link}">Читать дальше</a>\n` : ''
-    let msg = `<b>${p.title}</b>\n\n${entities(p.text)}\n${lnk}\n<em>${p.author}</em>`
+    let link = encodeURIComponent(p.link)
+    let instantViewHash = 'f3da38349d0127'  // check xpath.txt
+    let msg = `[${p.title}](${p.link})[\u200a](https://t.me/iv?url=${link}&rhash=${instantViewHash})`
+    await sleep(Math.random() * 2000 + 2000)
 
-    try { await tm.sendMessage(channel, msg, { parse_mode: 'HTML' }) }
+    try { await tm.sendMessage(devchat, msg, { parse_mode: 'Markdown' }) }
     catch (e) { tm.sendMessage(devchat, e.toString()); throw e }
   }
 
@@ -61,8 +47,10 @@ let sendToChat = async posts => {
 }
 
 
-run(scraper)
-  .then(prepareText)
+const FEED_URL = 'http://mmcs.sfedu.ru/index.php?option=com_content&view=category&format=feed&type=rss'
+
+grabRSS(FEED_URL)
+  .then(extractPosts)
   .then(skipExisting)
   .then(ps => console.log(`New posts: ${ps.length}`) || ps)
   .then(sendToChat)
