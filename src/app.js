@@ -27,6 +27,7 @@ let savePosts = posts => {
 }
 
 
+const chat    = process.env.MMCS_NEWS_TELEGRAM_CHAT
 const channel = process.env.MMCS_NEWS_TELEGRAM_CHANNEL
 const devchat = process.env.MMCS_NEWS_DEV_CHAT
 
@@ -39,7 +40,10 @@ let sendToChat = async posts => {
     let msg = `[${p.title}](${p.link})[\u200a](https://t.me/iv?url=${link}&rhash=${instantViewHash})`
     await sleep(Math.random() * 2000 + 2000)
 
-    try { await tm.sendMessage(devchat, msg, { parse_mode: 'Markdown' }) }
+    try {
+      await tm.sendMessage(chat,    msg, { parse_mode: 'Markdown' })
+      await tm.sendMessage(channel, msg, { parse_mode: 'Markdown' })
+    }
     catch (e) { tm.sendMessage(devchat, e.toString()); throw e }
   }
 
