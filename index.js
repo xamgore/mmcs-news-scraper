@@ -10,6 +10,5 @@ var fs = require('fs')
 if (!fs.existsSync('.env'))
   fs.writeFileSync('.env', fs.readFileSync('.env.example'))
 
-
-require('dotenv').config()
+require('dotenv/config')
 require('./src/app')

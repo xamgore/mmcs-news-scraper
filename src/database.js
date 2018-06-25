@@ -1,11 +1,8 @@
 import lowdb from 'lowdb'
-import fileAsyncStorage from 'lowdb/lib/storages/file-async'
+import FileAsync from 'lowdb/adapters/FileAsync'
 
-const db = lowdb('db.json', {
-  storage: fileAsyncStorage,
-  format: { serialize: o => JSON.stringify(o) }
-})
-
-db.defaults({ posts: [] }).write()
+const db =
+  lowdb(new FileAsync('db.json'))
+    .then(db => { db.defaults({ posts: [] }).write(); return db })
 
 export default db
