@@ -17,7 +17,11 @@ let grabRSS = url =>
 
 
 // check the `rss-example.json` file for the structure
-let extractPosts = xml => xml.rss.channel.item.reverse()
+// replace http://mmcs.sfedu.ru/147-news/sunmathevents/1617-%D0%BD%D...
+// with a short version, http://../1617
+let extractPosts = xml =>
+  xml.rss.channel.item.reverse()
+    .map(p => { p.link = p.link.replace(/(^.*?news.*?\d+).*/, '$1'); return p })
 
 
 let skipExisting = db => posts =>
