@@ -4,11 +4,12 @@ import loadDB from './database'
 import tm from './telegram'
 
 
-const chat    = process.env.MMCS_NEWS_TELEGRAM_CHAT
-const channel = process.env.MMCS_NEWS_TELEGRAM_CHANNEL
-const devchat = process.env.MMCS_NEWS_DEV_CHAT
-const FEED_URL = 'http://mmcs.sfedu.ru/index.php?option=com_content&view=category&format=feed&type=rss'
+const CHAT_ID = process.env.MMCS_NEWS_TELEGRAM_CHAT
+const CHANNEL_ID = process.env.MMCS_NEWS_TELEGRAM_CHANNEL
+const DEV_CHAT_ID = process.env.MMCS_NEWS_DEV_CHAT
 
+const FEED_URL = process.env.RSS_FEED_URL
+const INSTANT_VIEW_HASH = process.env.INSTANT_VIEW_HASH  // parse by rules in xpath.txt
 
 
 let grabRSS = url =>
@@ -37,15 +38,14 @@ let sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 let sendToChat = async posts => {
   for (let p of posts) {
     let link = encodeURIComponent(p.link)
-    let instantViewHash = 'f3da38349d0127'  // check xpath.txt
-    let msg = `[${p.title}](${p.link})[\u200a](https://t.me/iv?url=${link}&rhash=${instantViewHash})`
+    let msg = `[${p.title}](${p.link})[\u200a](https://t.me/iv?url=${link}&rhash=${INSTANT_VIEW_HASH})`
     await sleep((1 + Math.random()) * 2000)
 
     try {
-      await tm.sendMessage(chat,    msg, { parse_mode: 'Markdown' })
-      await tm.sendMessage(channel, msg, { parse_mode: 'Markdown' })
+      await tm.sendMessage(CHAT_ID,    msg, { parse_mode: 'Markdown' })
+      await tm.sendMessage(CHANNEL_ID, msg, { parse_mode: 'Markdown' })
     }
-    catch (e) { tm.sendMessage(devchat, e.toString()); throw e }
+    catch (e) { tm.sendMessage(DEV_CHAT_ID, e.toString()); throw e }
   }
 
   return posts
