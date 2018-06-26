@@ -1,7 +1,8 @@
 require('babel-polyfill')
 require('babel-register')({
   presets: ['env'],
-  plugins: ['transform-object-rest-spread']
+  plugins: ['transform-object-rest-spread'],
+  ignore: /node_modules\/(?!lowdb|dotenv)/,
 })
 
 
