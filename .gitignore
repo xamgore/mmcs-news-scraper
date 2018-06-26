@@ -1,6 +1,7 @@
 .env
 .env.production
 db.json
+db.yaml
 
 #######################
 #   Utilities
