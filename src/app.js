@@ -42,7 +42,7 @@ let sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 let sendToChat = async posts => {
   for (let p of posts) {
     let link = encodeURIComponent(p.link)
-    let msg = `[${p.title}](${p.link})[\u200a](https://t.me/iv?url=${link}&rhash=${INSTANT_VIEW_HASH})`
+    let msg = `[\u200a](https://t.me/iv?url=${link}&rhash=${INSTANT_VIEW_HASH})\u200a[${p.title}](${p.link})`
     await sleep((1 + Math.random()) * 2000)
 
     try {
