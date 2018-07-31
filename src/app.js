@@ -21,7 +21,10 @@ let grabRSS = url =>
 // with a short version, http://../1617
 let extractPosts = xml =>
   xml.rss.channel.item.reverse()
-    .map(p => { p.link = p.link.replace(/(^.*?news.*?\d+).*/, '$1'); return p })
+    .map(p => {
+      p.link = p.link.replace(/(^.*?news.*?)(?:\d{4}–\d\d-\d\d–\d\d-\d\d–\d\d\/)?(\d+).*/, '$1$2')
+      return p
+    })
 
 
 let skipExisting = db => posts =>
