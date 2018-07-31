@@ -4,8 +4,7 @@ import loadDB from './database'
 import tm from './telegram'
 
 
-const CHAT_ID = process.env.MMCS_NEWS_TELEGRAM_CHAT
-const CHANNEL_ID = process.env.MMCS_NEWS_TELEGRAM_CHANNEL
+const CHAT_IDS = JSON.parse(process.env.TELEGRAM_SINKS)
 const DEV_CHAT_ID = process.env.MMCS_NEWS_DEV_CHAT
 
 const FEED_URL = process.env.RSS_FEED_URL
@@ -49,8 +48,8 @@ let sendToChat = async posts => {
     await sleep((1 + Math.random()) * 2000)
 
     try {
-      await tm.sendMessage(CHAT_ID,    msg, { parse_mode: 'Markdown' })
-      await tm.sendMessage(CHANNEL_ID, msg, { parse_mode: 'Markdown' })
+      for (let chat of CHAT_IDS)
+        await tm.sendMessage(chat, msg, { parse_mode: 'Markdown' })
     }
     catch (e) { tm.sendMessage(DEV_CHAT_ID, e.toString()); throw e }
   }
