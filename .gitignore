@@ -3,6 +3,8 @@
 db.json
 db.yaml
 
+package-lock.json
+
 #######################
 #   Utilities
 
