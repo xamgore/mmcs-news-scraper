@@ -42,19 +42,25 @@ let sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 
 let sendToChat = async posts => {
+  const successfullySent = []
+
   for (let p of posts) {
     let link = encodeURIComponent(p.link)
     let msg = `[\u200a](https://t.me/iv?url=${link}&rhash=${INSTANT_VIEW_HASH})\u200a[${p.title}](${p.link})`
     await sleep((1 + Math.random()) * 2000)
 
     try {
-      for (let chat of CHAT_IDS)
+      for (let chat of CHAT_IDS) {
         await tm.sendMessage(chat, msg, { parse_mode: 'Markdown' })
+        await sleep((1 + Math.random()) * 1000)
+      }
+
+      successfullySent.push(p)
     }
     catch (e) { tm.sendMessage(DEV_CHAT_ID, e.toString()); throw e }
   }
 
-  return posts
+  return successfullySent
 }
 
 
