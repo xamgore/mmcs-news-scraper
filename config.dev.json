@@ -1,0 +1,10 @@
+{
+  "rssFeedUrl": "http://mmcs.sfedu.ru/?format=feed&type=rss",
+  "telegram": {
+    "instantViewRhash": "f3da38349d0127",
+    "token": "342918051:AAEUtea8H5S1cHpmL87i5CtrMJ5oRZ-EQTM",
+    "chatIds": [-1001221426520, -1001221426520],
+    "devChatId": -208794526,
+    "proxy": "http://91.235.142.165:8888"
+  }
+}

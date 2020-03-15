@@ -1,5 +1,7 @@
 .env
 .env.production
+config.json
+config.prod.json
 db.json
 db.yaml
 

@@ -1,3 +1,7 @@
+~version: "2.1"
+
+
+site_name: "Мехмат ЮФУ"
 title: //h1[has-class("article_title")]
 body: //div[has-class("newsitem_text")]
 
@@ -8,15 +12,37 @@ author: //span[has-class("createby")]/text()[2]
 
 
 # remove "Обновлено", then parse date
-date: //span[has-class("modifydate")]
-@replace("Обновлено: ", ""): $date
+@inline: //div[has-class("newsitem_info")]/comment()
+$date:   //span[has-class("modifydate")]
+$date?:  //span[has-class("createdate")]/text()[2]
 
-@datetime: $date
+@replace("Обновлено: ", ""): $date
+@replace("Создано: ", "")
+@datetime
 published_date: $@
+
+
+
 
 
 # mark colored spans as bold
 @wrap(<b>): //span[starts-with(@style, 'color')]
+
+# hidden emails
+$cloaks: //span[starts-with(@id, "cloak")]
+@map() {
+  $c: $@
+
+  $s: $c/next-sibling::script
+  @match("'[^']*?' \\+ '@' \\+ '.*?' \\+ '.' \\+ '.*?'")
+  @replace("' \\+ '", "")
+  @replace("^'", "")
+  @replace("'$", "")
+  @replace_tag(<a>)
+  @set_attr(href, "mailto:", ./text())
+
+  @remove: $c
+}
 
 
 # remove bad images from the page
@@ -24,7 +50,16 @@ published_date: $@
 @remove: //img[has-class("mythumb")]
 @remove: //img[contains(@src, "logo_sfedu_white.png")]
 
-
+@split_parent: //p/br
+@split_parent: //span/img
+@split_parent: //p/img
+@split_parent: //p/figure
 image_url: //img/@src
+
+
+
+?path: /[^/]*/sunmathevents/.*
+image_url: "https://pbs.twimg.com/media/CPV-6O3UwAANiZA.jpg:large"
+
 image_url: "https://i.imgur.com/tQxAcdo.png"
 @debug: $image_url

@@ -1,23 +1,41 @@
 {
   "name": "mmcs-scraper",
-  "version": "2.0.0",
-  "main": "index.js",
-  "author": "xamgore",
+  "version": "2.0.1",
+  "private": true,
   "license": "MIT",
+  "author": "xamgore",
   "scripts": {
-    "start": "node ./index.js"
+    "start": "node -r register.js ./src/index.js"
   },
   "dependencies": {
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-register": "^6.26.0",
-    "dotenv": "^7.0.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/plugin-proposal-export-default-from": "^7.8.3",
+    "@babel/plugin-proposal-export-namespace-from": "^7.8.3",
+    "@babel/plugin-proposal-optional-chaining": "^7.8.3",
+    "@babel/plugin-syntax-typescript": "^7.8.3",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-typescript": "^7.8.3",
+    "@babel/register": "^7.8.3",
+    "babel-plugin-transform-numeric-separator": "^7.0.0-beta.3",
+    "core-js": "^3.6.4",
     "from-xml": "^0.1.6",
     "js-yaml": "^3.13.1",
+    "lodash": "^4.17.15",
     "lowdb": "^1.0.0",
-    "node-fetch": "^2.5.0",
-    "node-telegram-bot-api": "^0.30.0",
+    "node-fetch": "^2.6.0",
+    "node-telegram-bot-api": "^0.40.0",
+    "regenerator-runtime": "^0.13.5",
     "socks5-https-client": "^1.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.1",
+    "@types/jest": "^25.1.4",
+    "jest": "^25.1.0",
+    "jest-extended": "^0.11.5"
   }
 }

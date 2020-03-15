@@ -1,5 +1,6 @@
 import Socks5HttpsAgent from 'socks5-https-client/lib/Agent'
 import TelegramBot from 'node-telegram-bot-api'
+import config from '../config.json'
 
 
 const socksProxy = {
@@ -13,17 +14,17 @@ const socksProxy = {
   },
 }
 
-const httpsProxy = {
-  // http://spys.one/en/https-ssl-proxy/
-  proxy: "https://128.199.172.233:8080",
-}
-
-const bot = new TelegramBot(process.env.MMCS_NEWS_TELEGRAM_TOKEN, {
-  polling: false,
-  request: httpsProxy,
-})
-
 // change polling to true, so you will get chat id from bot
 // bot.onText(/chat id/, msg => bot.sendMessage(msg.chat.id, msg.chat.id))
 
-export default bot
+export const bot = new TelegramBot(config.telegram.token, {
+  polling: false,
+  request: {
+    proxy: config.telegram.proxy,
+  },
+})
+
+export function instantView(url) {
+  let link = encodeURIComponent(url)
+  return `https://t.me/iv?url=${link}&rhash=${(config.telegram.instantViewRhash)}`
+}
