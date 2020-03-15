@@ -30,5 +30,5 @@ There is the `.env.example` file in the project root. Rename it to `.env`, chang
 To add a task to cron run `crontab -e`, then add the line:
 
 ```
-*/30 * * * *   cd /home/xamgore/mmcs-news-scraper/ && /usr/local/bin/node -r ./register.js ./src/index.js
+*/30 * * * *   cd /root/mmcs-news-scraper/ && /root/.nvm/versions/node/v13.11.0/bin/node -r ./register.js ./src/index.js
 ```
