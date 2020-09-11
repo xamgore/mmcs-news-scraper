@@ -27,7 +27,7 @@
     "js-yaml": "^3.13.1",
     "lodash": "^4.17.15",
     "lowdb": "^1.0.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "node-telegram-bot-api": "^0.40.0",
     "regenerator-runtime": "^0.13.5",
     "socks5-https-client": "^1.2.1"
